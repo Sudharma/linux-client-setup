@@ -33,3 +33,13 @@ wget https://raw.githubusercontent.com/ahmetb/kubectl-alias/master/.kubectl_alia
 
 echo "[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases" >> ~/.zshrc
 
+#Install kubectx and kubens plugins
+git clone https://github.com/ptavares/zsh-kubectx.git ~/.oh-my-zsh/custom/plugins/zsh-kubectx
+
+echo "add zsh-kubectx in the zsh plugin section of ~/.zshrc"
+
+#Install SCM Breeze
+git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
+~/.scm_breeze/install.sh
+
+echo "add this line in zshrc [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh""
