@@ -43,3 +43,7 @@ git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
 ~/.scm_breeze/install.sh
 
 echo "add this line in zshrc [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh""
+
+#install fzf for kubectx smart drop down
+git clone --depth 1 https://github.com/junegunn/fzf.git 
+~/.fzf~/.fzf/install
